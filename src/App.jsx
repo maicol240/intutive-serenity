@@ -1,9 +1,14 @@
-import { useState } from "react";
 import "./App.css";
-import { Header, Hero } from "./components/index.js";
+import { Header, Hero, Services } from "./components/index.js";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Header />
+      <Hero />
+      <Services />
+    </>
+  );
 }
 
 export default App;

@@ -1,12 +1,5 @@
-/* Layout */
-
 section {
-  max-width: 1200px;
-  margin: 0 auto;
-
-  /* Responsive padding */
-  padding: clamp(var(--space-2xl), 5vw, var(--space-4xl))
-    /* 40px - 80px      16px-40px */
-    clamp(var(--space-md), 5vw, var(--space-2xl));
-  margin-bottom: var(--space-4xl);
+  padding-block: clamp(60px, 15vw, 120px);
+  padding-inline: clamp(30px, 4vw, 55px);
+  min-height: 100vh;
 }

@@ -1,0 +1,84 @@
+:root {
+  /* COLORS */
+
+  --color-accent: #f9c438; /* gold – main buttons, highlights */
+  --color-bg: #fafaf7; /* page background */
+  --color-surface: #ffffff; /* cards, sections */
+  --color-text: wg; /* main text */
+  --color-null-text: #6b7c93;
+  --bg-filter: hsla(0, 0%, 0%, 0.26);
+
+  /* secondary text */
+  /* FONTS */
+  --font-body:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+
+  /* FONT SIZES */
+  --font-size-xs: 0.75rem; /* ~12px – tiny labels, badges, very small text */
+  --font-size-sm: 0.875rem; /* ~14px – helper text, captions, secondary text */
+  --font-size-md: 1rem; /* 16px – main body text, inputs, most UI text */
+  --font-size-lg: 1.25rem; /* 20px – slightly larger text, card titles on mobile */
+  --font-size-xl: 1.5rem; /* 24px – section titles, important headings */
+  --font-size-2xl: 2rem; /* 32px – hero subtitles, main page titles on mobile */
+  --font-size-3xl: 2.5rem; /* 40px – big hero titles on desktop */
+  --font-size-4xl: 3rem; /* 48px – extra large display text if needed */
+
+  --line-height-tight: 1.2; /* For headings, keeps lines closer together */
+  --line-height-relaxed: 1.5; /* For paragraphs, keeps text readable */
+
+  /* SPACING */
+
+  --space-xxs: 0.25rem; /* 4px – tiny gaps (icon + text, chip text) */
+  --space-xs: 0.5rem; /* 8px – small gaps (label + input, inline items) */
+  --space-sm: 0.75rem; /* 12px – compact padding, small vertical spacing */
+  --space-md: 1rem; /* 16px – default padding, gaps between elements */
+  --space-lg: 1.5rem; /* 24px – space between stacked blocks inside a section */
+  --space-xl: 2rem; /* 32px – section padding on mobile/tablet */
+  --space-2xl: 2.5rem; /* 40px – section padding on desktop, big gaps */
+  --space-3xl: 4rem; /* 64px – hero top/bottom padding, major breaks */
+  --space-4xl: 5rem; /*80px – extra large spacing if needed */
+  /* RADIUS */
+  --radius-soft: 12px;
+  /* ===== SHADOWS ===== */
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --shadow-button-hover: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-md);
+  background-color: var(--color-bg);
+}
+
+p {
+  line-height: var(--line-height-relaxed);
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--line-height-tight);
+}
+
+a,
+a:visited,
+a:active,
+a:focus {
+  color: var(--color-primary);
+  text-decoration: none;
+}
